@@ -4,6 +4,69 @@
   box-sizing: border-box;
 }
 
-img {
-  width: 100%;
+.container {
+  padding: 0 24px;
+}
+
+.frame-01 {
+  height: 100%;
+}
+.smoke-01 {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+.smoke-02 {
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  z-index: -1;
+  
+}
+
+.save-date {
+  margin-top: -50px;
+  padding: 24px;
+  border: 1px solid #c6754d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  text-align: center;
+}
+.save-date {
+  color: var(--Wedding-Colors-Primary, #c6754d);
+  text-align: center;
+
+  /* Text Base/All Breakpoints */
+  font-family: Montaga;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 1.8rem */
+}
+.date-text {
+  color: var(--Wedding-Colors-Primary, #c6754d);
+  text-align: center;
+  font-family: Montaga;
+  font-size: 5.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 5.125rem */
+}
+
+.b-s {
+  color: var(--Wedding-Colors-Primary, #c6754d);
+  font-family: Montaga;
+  font-size: 2.6875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 3.225rem */
+  dis
+}
+
+.frame-02{
+  height: 100vh;
+  border: 48pxpx solid red;
+  display:none;
 }
