@@ -5,6 +5,11 @@
     scroll-behavior: smooth;
 }
 
+body{
+    background: #FDFBEF;
+
+}
+
 :root {
     --primary: #c6754d;
 }
@@ -184,4 +189,5 @@
 
 #piker-3 {
     background: #a55726;
+    
 }
