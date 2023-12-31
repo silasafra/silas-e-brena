@@ -4,26 +4,34 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="../style.css" />
-        <meta property="og:title" content="Talita e Vidal" />
+        <meta property="og:title" content="Lucas Lima" />
         <meta property="og:type" content="video.movie" />
         <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
         <meta property="og:image" content="../padrinhos/assets/img-01.png" />
-        <title>Talita e Vidal</title>
+        <title>Lucas Lima</title>
     </head>
     <body>
         <section>
             <img src="assets/img-01.png" alt="" style="width: 100%" />
-            <img src="img-padrinho/co-01.png" alt="" style="width: 100%" />
+            <img src="img-padrinho/pa-01.png" alt="" style="width: 100%" />
             <img src="assets/img-03.png" alt="" style="width: 100%" />
             <img src="assets/img-04.png" alt="" style="width: 100%" />
             <img src="assets/img-05.png" alt="" style="width: 100%" />
             <img src="assets/img-06.png" alt="" style="width: 100%" />
             <img src="assets/img-07.png" alt="" style="width: 100%" />
-            <img src="assets/img-08.png" alt="" style="width: 100%" />
-            <img src="assets/img-09.png" alt="" style="width: 100%" />
             <img src="assets/img-10.png" alt="" style="width: 100%" />
             <img src="assets/img-11.png" alt="" style="width: 100%" />
             <img src="assets/img-01.png" alt="" style="width: 100%" />
         </section>
+        <audio autoplay muted id="meuAudio">
+            <source src="assets/song.mp3" type="audio/mp3" />
+        </audio>
+        <script>
+            const meuAudio = document.getElementById('meuAudio');
+            meuAudio.addEventListener('canplaythrough', function () {
+                this.muted = false;
+                this.volume = 1.0; //
+            });
+        </script>
     </body>
 </html>
