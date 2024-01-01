@@ -6,17 +6,14 @@
         <link rel="stylesheet" href="../style.css" />
         <meta property="og:title" content="Talita e Vidal" />
         <meta property="og:type" content="video.movie" />
-        <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
+        <meta property="og:url" content="Brena e Silas" />
         <meta property="og:image" content="../padrinhos/assets/img-01.png" />
         <title>Talita e Vidal</title>
     </head>
-    <body>
+    <body c="toca()">
         <section>
             <!-- Incorporação do vídeo do YouTube -->
-            <audio controls autoplay>
-                <source src="assets/song.mp3" type="audio/mpeg" />
-                Seu navegador não suporta o elemento de áudio.
-            </audio>
+
             <img src="assets/img-01.png" alt="" style="width: 100%" />
             <img src="img-padrinho/co-01.png" alt="" style="width: 100%" />
             <img src="assets/img-03.png" alt="" style="width: 100%" />
@@ -30,5 +27,22 @@
             <img src="assets/img-11.png" alt="" style="width: 100%" />
             <img src="assets/img-01.png" alt="" style="width: 100%" />
         </section>
+        <audio id="meuAudio" controls autoplay style="display: none">
+            <source src="assets/song.mp3" type="audio/mpeg" />
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+        <script>
+            const body = document.getElementById('body');
+            const meuAudio = document.getElementById('meuAudio');
+            alert('olá?');
+
+            const playSong = () => {
+                console.log('tocou');
+                meuAudio.play();
+            };
+            window.addEventListener('scroll', e => {
+                playSong();
+            });
+        </script>
     </body>
 </html>
