@@ -10,8 +10,8 @@
         <meta property="og:image" content="../padrinhos/assets/img-01.png" />
         <title>Talita e Vidal</title>
     </head>
-    <body c="toca()">
-        <section>
+    <body>
+        <section onclick="playSong()">
             <!-- Incorporação do vídeo do YouTube -->
 
             <img src="assets/img-01.png" alt="" style="width: 100%" />
@@ -27,19 +27,20 @@
             <img src="assets/img-11.png" alt="" style="width: 100%" />
             <img src="assets/img-01.png" alt="" style="width: 100%" />
         </section>
+
         <audio id="meuAudio" controls autoplay style="display: none">
             <source src="assets/song.mp3" type="audio/mpeg" />
-            Seu navegador não suporta o elemento de áudio.
         </audio>
         <script>
             const body = document.getElementById('body');
             const meuAudio = document.getElementById('meuAudio');
-            alert('olá?');
 
             const playSong = () => {
                 console.log('tocou');
                 meuAudio.play();
             };
+
+            const toque = () => {};
             window.addEventListener('scroll', e => {
                 playSong();
             });

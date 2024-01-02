@@ -11,7 +11,7 @@
         <title>Tatiele e Manuel</title>
     </head>
     <body>
-        <section>
+        <section onclick="playSong()">
             <img src="assets/img-01.png" alt="" style="width: 100%" />
             <img src="img-padrinho/co-03.png" alt="" style="width: 100%" />
             <img src="assets/img-03.png" alt="" style="width: 100%" />
@@ -25,14 +25,21 @@
             <img src="assets/img-11.png" alt="" style="width: 100%" />
             <img src="assets/img-01.png" alt="" style="width: 100%" />
         </section>
-        <audio autoplay muted id="meuAudio">
-            <source src="assets/song.mp3" type="audio/mp3" />
+        <audio id="meuAudio" controls autoplay style="display: none">
+            <source src="assets/song.mp3" type="audio/mpeg" />
         </audio>
         <script>
+            const body = document.getElementById('body');
             const meuAudio = document.getElementById('meuAudio');
-            meuAudio.addEventListener('canplaythrough', function () {
-                this.muted = false;
-                this.volume = 1.0; //
+
+            const playSong = () => {
+                console.log('tocou');
+                meuAudio.play();
+            };
+
+            const toque = () => {};
+            window.addEventListener('scroll', e => {
+                playSong();
             });
         </script>
     </body>
