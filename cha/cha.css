@@ -45,3 +45,8 @@ input[type='checkbox'] {
 .op-2 div {
     text-decoration: line-through;
 }
+
+.list {
+    max-width: 600px;
+    margin: 0 auto;
+}
