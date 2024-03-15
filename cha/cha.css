@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+body {
+    background: #f7f5f1;
+}
 .italiana {
     font-family: 'Italiana', sans-serif;
     font-weight: 400;
@@ -15,6 +18,7 @@ li {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     text-align: right;
+    color: #606654;
 }
 ol {
     margin-top: 40px;
@@ -36,4 +40,8 @@ input[type='checkbox'] {
 
 .op-2 {
     opacity: 0.2;
+    text-decoration: line-through;
+}
+.op-2 div {
+    text-decoration: line-through;
 }
