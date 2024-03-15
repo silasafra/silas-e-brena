@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .italiana {
     font-family: 'Italiana', sans-serif;
     font-weight: 400;
@@ -10,17 +11,22 @@
 }
 li {
     margin-bottom: 1rem;
+    margin-left: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-align: right;
 }
-ul {
+ol {
     margin-top: 40px;
 }
-ul li {
+ol li div {
     display: flex;
     justify-content: space-between;
 }
-ul li [chek] {
-    display: flex;
-    justify-content: space-between;
+input[type='checkbox'] {
+    opacity: 1;
+    width: 20px;
+    height: 20px;
 }
 
 .container {
@@ -30,7 +36,4 @@ ul li [chek] {
 
 .op-2 {
     opacity: 0.2;
-}
-.op-2 div {
-    text-decoration: line-through;
 }
