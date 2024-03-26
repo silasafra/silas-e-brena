@@ -5,7 +5,7 @@ let convite = document.querySelector('.convite');
 console.log(frame1, frame2, frame3, convite);
 
 gsap.timeline()
-    .to(frame1, { duration: 6, display: 'none' })
-    .to(frame2, { duration: 12, display: 'none' }, '-=6')
-    .to(frame3, { duration: 15, display: 'none' }, '-=6')
+    .fromTo(frame1, { display: 'block', opacity: 1 }, { duration: 6, display: 'none', opacity: 0, ease: 'circ.in' })
+    .fromTo(frame2, { display: 'block', opacity: 1 }, { duration: 6, display: 'none', opacity: 0, ease: 'circ.in' })
+    .fromTo(frame3, { display: 'block', opacity: 1 }, { duration: 6, display: 'none', opacity: 0, ease: 'circ.in' })
     .to(convite, { duration: 0, display: 'block' });
