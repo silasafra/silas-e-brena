@@ -3,115 +3,121 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet" />
 
         <link rel="stylesheet" href="style.css" />
         <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
         <title>Brena e Silas</title>
         <meta property="og:title" content="Brena e Silas" />
         <meta property="og:image" content="../silas-e-brena/padrinhos/assets/img-01.png" />
     </head>
     <body>
-        <section class="frame-02">
-            <img src="asstes/smoke-01.png" alt="" class="smoke-01" />
-            <img src="asstes/smoke-02.png" alt="" class="smoke-02" />
-            <img src="asstes/silena-log.svg" alt="" />
-        </section>
-        <section class="frame-01 container">
-            <img src="asstes/flor-01.png" alt="" style="width: 100%" />
-            <img src="asstes/smoke-01.png" alt="" class="smoke-01" />
-            <img src="asstes/smoke-02.png" alt="" class="smoke-02" />
-            <div class="save-date">
-                <p class="text-save">Save the date</p>
-                <div class="date">
-                    <p class="date-text">04</p>
-                    <p class="date-text">05</p>
-                    <p class="date-text">24</p>
+        <section class="frame-01">
+            <div class="container-border">
+                <div class="logo">
+                    <svg width="220" height="222" viewBox="0 0 220 222" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M96.7725 162.326L98.6097 145.117L103.425 144.569C103.425 149.655 106.428 153.771 112.434 156.915C118.532 159.967 125.415 161.493 133.084 161.493C140.845 161.493 146.666 160.337 150.547 158.025C154.427 155.621 156.368 152.615 156.368 149.008C156.368 142.904 153.134 137.447 146.666 132.638C143.987 130.696 141.169 128.985 138.212 127.505C131.467 123.991 127.217 121.771 125.461 120.846C123.798 119.829 121.904 118.811 119.779 117.794C117.654 116.777 115.667 115.713 113.82 114.603C112.064 113.401 111.923 111.293 109.891 109.628C105.271 105.929 101.207 102.488 101.207 97.9559C101.207 93.3316 108.32 90.4667 109.891 87.0448C111.554 83.6228 109.843 80.1987 112.245 78.2565C114.74 76.3143 115.067 74.2796 118.393 72.9849C124.029 70.9502 130.312 69.9328 137.242 69.9328C144.264 69.9328 151.009 71.6901 157.476 75.2045L155.813 91.297H151.101C151.101 82.6033 143.802 78.2565 129.203 78.2565C122.459 78.2565 117.377 79.3201 113.958 81.4473C110.632 83.5744 108.969 86.4877 108.969 90.1871C108.969 96.1062 118.578 103.228 137.796 111.551C150.454 117.008 158.539 123.066 162.05 129.725C163.806 133.054 164.683 136.707 164.683 140.684C164.683 150.303 160.803 157.748 153.041 163.019C145.373 168.291 136.087 170.927 125.184 170.927C114.281 170.927 104.811 168.06 96.7725 162.326Z"
+                            fill="#FCF9F7"
+                        />
+                        <path
+                            d="M70.0842 54.4605L93.9223 53.0732C106.488 53.0732 114.48 56.1253 117.899 62.2293C119.285 64.7264 119.978 67.7784 119.978 71.3853C119.978 82.1136 115.543 90.6223 106.673 96.9113C115.543 100.738 122.195 102.368 124.967 108.01C126.261 110.784 126.908 114.114 126.908 117.998C126.908 127.339 122.981 135.293 115.127 141.859C107.366 148.333 98.1725 151.57 87.547 151.57H51.5127V147.408H56.2249C58.9967 147.408 60.7523 146.9 61.4914 145.882C62.2306 144.865 62.6002 143.339 62.6002 141.304V64.7264C62.6002 62.5067 62.1844 60.9345 61.3528 60.0096C60.6137 59.0848 58.9043 58.6224 56.2249 58.6224H51.5127V54.4605H70.0842ZM85.0523 60.5646C81.3565 60.5646 77.9379 60.842 74.7964 61.3969V97.7437H91.7048C96.7866 97.7437 101.083 95.894 104.594 92.1945C108.197 88.4026 109.999 84.3333 109.999 79.9865C109.999 73.6975 107.504 68.8882 102.515 65.5588C97.5257 62.2293 91.7048 60.5646 85.0523 60.5646ZM87.547 103.57H74.7964V142.969C80.4325 144.634 85.6991 145.466 90.5961 145.466C97.9877 145.466 103.993 143.663 108.613 140.056C113.233 136.356 115.543 131.408 115.543 125.212C115.543 116.981 112.586 111.247 106.673 108.01C101.406 105.05 95.0311 103.57 87.547 103.57Z"
+                            fill="#FCF9F7"
+                        />
+                        <path
+                            d="M210.569 136.094C203.041 163.375 184.983 186.547 160.369 200.514C135.755 214.481 106.601 218.098 79.3204 210.569C52.0397 203.041 28.867 184.983 14.9002 160.369C0.933365 135.755 -2.68357 106.601 4.84508 79.3204C12.3737 52.0397 30.4313 28.867 55.0452 14.9002C79.6592 0.933365 108.813 -2.68357 136.094 4.84508C163.375 12.3737 186.547 30.4313 200.514 55.0452C214.481 79.6592 218.098 108.813 210.569 136.094L210.569 136.094Z"
+                            stroke="white"
+                            stroke-width="2"
+                        />
+                        <path
+                            d="M213.99 142.205C206.496 169.358 188.523 192.422 164.025 206.323C139.526 220.224 110.509 223.824 83.3558 216.331C56.2029 208.838 33.1388 190.865 19.2374 166.366C5.33602 141.868 1.73603 112.85 9.22941 85.6971C16.7228 58.5442 34.6957 35.4801 59.1943 21.5787C83.6929 7.67733 112.71 4.07734 139.863 11.5707C167.016 19.0641 190.08 37.037 203.982 61.5356C217.883 86.0342 221.483 115.052 213.99 142.205L213.99 142.205Z"
+                            stroke="white"
+                            stroke-width="3"
+                            stroke-linecap="square"
+                        />
+                        <circle cx="17.1702" cy="163.902" r="3.18292" fill="#2B1105" stroke="white" stroke-width="3" />
+                        <circle cx="203.707" cy="60.8782" r="3.18292" fill="#2B1105" stroke="white" stroke-width="3" />
+                    </svg>
                 </div>
-                <p class="b-s">Brena & Silas</p>
             </div>
         </section>
-        <section class="frame-03 container">
-            <img src="asstes/mine-logo.svg" alt="" style="width: 83px" />
-            <h2>Padrinho & Madrinha</h2>
-            <p>Nosso casamento está chegando e sabemos que Deus faz tudo perfeito e para Ele já um tempo determinado para todas as coisas.</p>
-            <a href="" class="btn">Aceita ser nosso padrinho?</a>
-
-            <img src="asstes/chapel.svg" alt="" style="max-width: 190px" />
+        <section class="frame-02">
+            <div class="container-border">
+                <div class="ver">
+                    <p>“Assim, eles já não são dois, mas sim uma só carne. Portanto, o que Deus uniu, que ninguém separe.”</p>
+                    <p>- Mateus 19:6</p>
+                </div>
+            </div>
         </section>
-        <section class="frame-04">
-            <article class="container" id="s-01">
-                <img src="asstes/mine-logo.svg" alt="" style="width: 83px" />
-                <h2 class=" ">Que alegria!</h2>
-                <p>Obrigado <span>Padrinho</span> por ter aceitado o nosso convite! nós já sabíamos que você não iria recusar um pedido tão especiais como esse.</p>
-                <img src="asstes/flor-01.png" alt="" style="width: 120px" />
-            </article>
-            <article class="container" id="s-02">
-                <div class="title-box">
-                    <p>Nosso dia</p>
-                    <img src="asstes/church.svg" alt="" />
+        <section class="frame-03">
+            <div class="container-border">
+                <div class="save-date">
+                    <p>BRENA E SILAS</p>
+
+                    <div class="l-divider"></div>
+                    <div class="date">
+                        30 <br />
+                        MAIO <br />
+                        2024
+                    </div>
+                    <div class="l-divider"></div>
+                    <p>SAVE THE DATE</p>
                 </div>
-                <a
-                    href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NnBoNmNlOW82b3MzMmJiNDZoajY4YjlrNjBzMzhiOW82ZGdtNGI5bGM1Z2pjb2o0NmxoMzZwMWdjOCBzaWxhc2FmcmFAbQ&tmsrc=silasafra%40gmail.com"
-                >
-                    <img src="asstes/Calendar.png" alt="" style="width: 100%" />
-                </a>
-            </article>
-            <article class="container padding" id="s-03">
-                <div class="title-box">
-                    <img src="asstes/church.svg" alt="" />
-                    <p>Local</p>
-                    <h3>Império das Festas</h3>
-                    <p>Às 19:00h</p>
+            </div>
+        </section>
+
+        <section class="convite">
+            <div class="container">
+                <img class="img" src="asstes/img-convite.png" alt="" />
+                <h2 class="title">Brena e Silas</h2>
+                <div class="date">
+                    <div class="box-name left">Sábado</div>
+                    <div class="center">
+                        <p>2024</p>
+                        <p style="font-size: 36px">04</p>
+                        <p>16:00h</p>
+                    </div>
+                    <div class="box-name">Maio</div>
                 </div>
-                <a href="" class="btn">Veja o mapa </a>
-            </article>
-            <article class="container padding" id="s-04">
-                <div class="title-box">
-                    <img src="asstes/church.svg" alt="" />
-                    <p>Manual</p>
-                    <h3>Madrinha</h3>
-                    <div class="color-container">
-                        <div id="piker-1" class="color-piker"></div>
-                        <div id="piker-2" class="color-piker"></div>
-                        <div id="piker-3" class="color-piker"></div>
+                <div class="interagir">
+                    <div class="btn-box">
+                        <a href="">
+                            <div class="icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                        </a>
+                        <a href="cha/index.html">
+                            <div class="icon">
+                                <i class="fa-solid fa-gift"></i>
+                            </div>
+                        </a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLIpe79rr6Mo4fkXF_bb8jDifUAJS99AwTFh1UzB0jfJwSLA/viewform" target="_blank"
+                            ><div class="icon">
+                                <i class="fa-solid fa-clipboard-list"></i></div
+                        ></a>
+                    </div>
+                    <div class="desciption">
+                        <span> <i class="fa-regular fa-hand-point-up"></i> </span>
+                        <p>Toque para interagir</p>
                     </div>
                 </div>
-            </article>
-
-            <div class="navbar-container">
-                <div class="navbar">
-                    <a href="#s-02">
-                        <img src="asstes/icon-01.svg" alt="" />
-                    </a>
-                    <a href="#s-03">
-                        <img src="asstes/icon-02.svg" alt="" />
-                    </a>
-                    <a href="#s-04">
-                        <img src="asstes/icon-03.svg" alt="" />
-                    </a>
-                    <a href="#s-05">
-                        <img src="asstes/icon-04.svg" alt="" />
-                    </a>
-                </div>
-            </div>
-            <div class="galery">
-                <img src="asstes/img.png" alt="" />
             </div>
         </section>
-        <section>
-            <img src="asstes/couple-01/img-01.png" alt="" style="width: 100%" />
-            <img src="asstes/couple-01/img-02.png" alt="" style="width: 100%" />
-            <img src="asstes/couple-01/img-03.png" alt="" style="width: 100%" />
-            <img src="asstes/couple-01/img-04.png" alt="" style="width: 100%" />
-            <img src="asstes/couple-01/img-05.png" alt="" style="width: 100%" />
-            <img src="asstes/couple-01/img-06.png" alt="" style="width: 100%" />
-            <img src="asstes/couple-01/img-07.png" alt="" style="width: 100%" />
-            <img src="asstes/couple-01/img-08.png" alt="" style="width: 100%" />
-            <img src="asstes/couple-01/img-09.png" alt="" style="width: 100%" />
-            <img src="asstes/couple-01/img-10.png" alt="" style="width: 100%" />
-            <img src="asstes/couple-01/img-11.png" alt="" style="width: 100%" />
-            <img src="asstes/couple-01/img-01.png" alt="" style="width: 100%" />
-        </section>
-        <a href="padrinhos/talita-vidal.html">padrinhos</a>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+            integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="script.js"></script>
     </body>
 </html>
