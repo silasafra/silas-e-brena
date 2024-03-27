@@ -76,9 +76,12 @@
         </section>
 
         <section class="convite">
-            <div class="container">
-                <img class="img" src="asstes/img-convite.png" alt="" />
-                <h2 class="title">Brena e Silas</h2>
+            <div class="convite-flex">
+                <div class="title-box">
+                    <h3>Com a benção de Deus e seus pais</h3>
+                    <h2 class="title">Brena e Silas</h2>
+                    <h3>convidam PARA SEU CASAMENTO</h3>
+                </div>
                 <div class="date">
                     <div class="box-name left">Sábado</div>
                     <div class="center">
@@ -90,16 +93,14 @@
                 </div>
                 <div class="interagir">
                     <div class="btn-box">
-                        <a href="">
+                        <a href="https://maps.app.goo.gl/KGKYnv3LSvE5VcRu8" target="_blank">
                             <div class="icon">
                                 <i class="fa-solid fa-location-dot"></i>
                             </div>
                         </a>
-                        <a href="cha/index.html">
-                            <div class="icon">
-                                <i class="fa-solid fa-gift"></i>
-                            </div>
-                        </a>
+                        <div class="icon" onclick="openDialog()">
+                            <i class="fa-brands fa-pix"></i>
+                        </div>
                         <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLIpe79rr6Mo4fkXF_bb8jDifUAJS99AwTFh1UzB0jfJwSLA/viewform" target="_blank"
                             ><div class="icon">
                                 <i class="fa-solid fa-clipboard-list"></i></div
@@ -112,6 +113,21 @@
                 </div>
             </div>
         </section>
+        <dialog id="pix">
+            <div class="btn-modal">
+                <div id="closeModal"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+            <div class="box-modal">
+                <i class="fa-brands fa-pix"></i>
+                <div class="pix-box">
+                    <img src="asstes/qrcode.webp" alt="" />
+                    <p>73988878903</p>
+                    <p>Silas Afra dos Santos Bulhões</p>
+                </div>
+                <button id="copyButton" class="button" onclick="copyText()">Copiar código do QR code</button>
+            </div>
+        </dialog>
+
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
             integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
